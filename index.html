@@ -7,38 +7,75 @@
   <title>MayBay</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body class="bg-gray-100">
 
+<!-- HEADER -->
 <header class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-50">
   <h1 class="text-2xl font-bold">Maybay</h1>
-  <nav class="spacex.hte-x-4 text-lg">
-    <a href="./indml" class="hover:text-blue-600">Главная</a>
+  <nav class="space-x-4 text-lg">
+    <a href="./index.html" class="hover:text-blue-600">Главная</a>
     <a href="./catalog.html" class="hover:text-blue-600">Каталог</a>
     <a href="./contact.html" class="hover:text-blue-600">Контакты</a>
   </nav>
 </header>
 
-<section class="p-10 text-center">
-  <h2 class="text-4xl font-bold mb-4">3D Печать на заказ</h2>
-  <p class="text-lg text-gray-700">Печатаю фигурки, детали,кейкапы,сувениры и любые 3D-модели</p>
-  <a href="./catalog.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-xl">
+<!-- HERO -->
+<section class="p-12 text-center bg-gradient-to-b from-white to-gray-100">
+  <h2 class="text-5xl font-extrabold mb-6">3D Печать на заказ</h2>
+  <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+    Печатаю фигурки, кейкапы, сувениры, детали и любые модели по вашим пожеланиям.
+  </p>
+  <a href="./catalog.html" 
+     class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 transition text-white px-8 py-4 rounded-2xl text-xl shadow-lg">
     Смотреть каталог
   </a>
 </section>
 
-<section class="p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-  <div class="bg-white p-6 rounded-xl shadow">
+<!-- FEATURES -->
+<section class="p-10 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+  <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
     <h3 class="text-xl font-bold mb-2">Высокое качество печати</h3>
-    <p class="text-gray-600">Использую PLA, PETG, ABS и другие материалы.</p>
+    <p class="text-gray-600">Использую PLA, PETG, ABS и другие современные материалы.</p>
   </div>
-  <div class="bg-white p-6 rounded-xl shadow">
+
+  <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
     <h3 class="text-xl font-bold mb-2">Любые модели</h3>
-    <p class="text-gray-600">Печатаю по вашим чертежам, STL или создам модель с нуля.</p>
+    <p class="text-gray-600">Работаю по STL-файлам, чертежам или создаю модели с нуля.</p>
   </div>
-  <div class="bg-white p-6 rounded-xl shadow">
+
+  <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
     <h3 class="text-xl font-bold mb-2">Быстрая доставка</h3>
-    <p class="text-gray-600">Отправка СДЭК/Почтой, а также Авито по всей стране.</p>
+    <p class="text-gray-600">СДЭК, Почта России, Авито-доставка — по всей стране.</p>
   </div>
+</section>
+
+<!-- GALLERY -->
+<section class="p-10 bg-white">
+  <h2 class="text-3xl font-bold text-center mb-6">Примеры моих работ</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <!-- Фото 1 -->
+    <div class="rounded-xl overflow-hidden shadow">
+      <img src="./img/example1.jpg" class="w-full h-64 object-cover">
+    </div>
+
+    <!-- Фото 2 -->
+    <div class="rounded-xl overflow-hidden shadow">
+      <img src="./img/example2.jpg" class="w-full h-64 object-cover">
+    </div>
+
+    <!-- Фото 3 -->
+    <div class="rounded-xl overflow-hidden shadow">
+      <img src="./img/example3.jpg" class="w-full h-64 object-cover">
+    </div>
+
+  </div>
+
+  <p class="text-center text-gray-500 mt-4">
+    Чтобы добавить фото — просто положи файл в папку <code>img</code> и замени пути.
+  </p>
 </section>
 
 </body>
